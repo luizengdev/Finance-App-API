@@ -1,5 +1,4 @@
 import { PostgresHelper } from '../../db/postgres/helper';
-
 export class PostgresCreateUserRepository {
     async execute(createUserParams) {
         const results = await PostgresHelper.query(
