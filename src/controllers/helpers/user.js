@@ -1,5 +1,5 @@
 import validator from 'validator';
-import { badRequest } from '.http.js';
+import { badRequest } from './http.js';
 
 export const invalidPasswordResponse = () =>
     badRequest({ message: 'Password must be at least 6 characters' });
