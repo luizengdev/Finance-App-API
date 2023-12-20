@@ -1,4 +1,4 @@
-import { PostgresHelper } from '../../db/postgres/helper.js';
+import { PostgresHelper } from '../../../db/postgres/helper.js';
 
 export class PostgresUpdateUserRepository {
     // A função começa criando duas matrizes vazias: updateFields e updateValues. Em seguida, ela itera sobre as chaves do objeto updateUserParams
