@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { UserNotFoundError } from '../../errors/user';
+import { UserNotFoundError } from '../../errors/user.js';
 
 export class CreateTransactionUseCase {
     constructor(createTransactionRepository, getUserByIdRepository) {
