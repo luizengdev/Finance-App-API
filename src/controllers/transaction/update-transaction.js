@@ -1,5 +1,6 @@
 import {
     badRequest,
+    checkIfAmountIsValid,
     checkIfIdIsValid,
     checkIfTypeIsValid,
     invalidAmountResponse,
@@ -39,7 +40,7 @@ export class UpdateTransactionController {
             }
 
             if (params.amount) {
-                const amountIsValid = checkIfIdIsValid(params.amount);
+                const amountIsValid = checkIfAmountIsValid(params.amount);
 
                 if (!amountIsValid) {
                     return invalidAmountResponse();
